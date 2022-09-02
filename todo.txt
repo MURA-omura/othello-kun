@@ -1,0 +1,8 @@
+- 画像の廃棄処理
+postした後に削除する
+
+for msg in response_body['messages']:
+if msg['type'] == 'image':
+os.remove(msg[''].replace('', ''))
+elif msg['type'] == 'video':
+os.remove(msg[''].replace('', ''))
